@@ -1,0 +1,15 @@
+
+
+<h1>Blog</h1>
+
+<a href="/blog/new">add new post</a>
+<br>
+<hr>
+
+{{post_list}}
+
+{% for post in post_list %}
+
+    <h3><a href="/blog/{{post.id}}">{{post}}</a></h3>
+
+{% endfor %}
